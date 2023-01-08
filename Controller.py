@@ -37,7 +37,7 @@ class Controller:
                     return
     
     def moveTo(p):
-        
+        pass
         
     
     # PRIVATE THREAD CONTROL
@@ -69,7 +69,6 @@ class Controller:
             cAngle = self.__lastAxisPositions[axisName]
             
             while cAngle != self.__axis[axisName]["Degree"]:
-                
                 # checks if servo should be rotated positive or negative
                 if cAngle > self.__axis[axisName]["Degree"]:
                     cAngle = cAngle - self.__axis[axisName]["StepSize"]
